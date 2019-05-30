@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/title">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/aamenu"/>
+        <TextView
+            android:layout_centerVertical="true"
+
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="현재 위치"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="#191210"
+
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/content"
+        android:orientation="vertical">
+
+        <TextView
+            android:padding="6dp"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="고객님의 현재 위치는"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/where"
+            android:paddingLeft="6dp"
+            android:text="휴게실"
+            android:textColor="#f11"
+            android:textSize="42sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:padding="6dp"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="입니다."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/content"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="40dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="6dp"
+
+            android:text="이 곳 근처에는"/>
+        <TextView
+            android:paddingLeft="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/near"
+            android:textColor="#f55"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:text="화장실"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="6dp"
+
+            android:text="이(가) 있습니다."/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="확 인"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"/>
+
+</RelativeLayout>

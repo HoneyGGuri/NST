@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/title">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/aamenu"/>
+        <TextView
+            android:layout_centerVertical="true"
+
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="공 지 사 항"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="#191210"
+
+            />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/content"
+        android:padding="8dp"
+        android:textColor="#000"
+        android:textSize="17sp"
+        android:text="test"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="확 인"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"/>
+
+</RelativeLayout>
